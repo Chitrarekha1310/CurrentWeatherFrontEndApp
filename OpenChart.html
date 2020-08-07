@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Weather chart</title>
+    
+    <script src ="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel ="stylesheet" href = "style.css"></link>
+
+</head>
+    <body>
+        <div class = "row">
+            <div class= "col-xs-8"></div>
+            <div class= "col-xs-4">
+        <h1>
+            Weather chart :
+        </h1>
+        <button onclick="goToIndex()" id ="goToIndexBtn">Go back to main page</button> 
+    </div>
+    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class = "row openChrt">
+            <div class = "col-xs-1"></div>
+            <div class = "col-xs-10"><canvas id="myChart"></canvas>
+            </div>
+        <div class = "col-xs-1"></div>
+        <style>
+            .openChrt{
+                margin-top : 20px;
+                margin-bottom: 20px;
+                height : 60%;
+            }
+        </style>
+    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+          
+      <script>
+          $( document ).ready(function() {
+            document.getElementById('myChart').style.backgroundColor('transparent');
+            
+            });
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="script.js"></script>
+    </body>
+    <hr>
+    
+<footer>
+    <label> By Chitrarekha Sikarwar</label>
+</footer>
+</html>

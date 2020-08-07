@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Weather API</title>
+        
+        <script src ="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel ="stylesheet" href = "style.css"></link>
+    </head>
+<body>
+        <h1 > Weather forecaste</h1>            
+        
+
+        <div class="container headcont">     
+            <h2 class = "city"></h2>
+            <div class="row">
+                <div class="col-sm-5">
+                    <img class="weatherImg"> <br>
+                    <label class = "weatherType"></label><br>
+                    <label class = "weatherTemperature">Temperature is :</label>
+                    <br>    
+                    <label class = "weatherTemperatureHigh">Today's High Temperature :</label>
+                    <br>
+                    <label class = "weatherTemperatureLow"> Today's Low Temperature :</label>                                            
+                </div>
+                <div class="col-sm-7" >
+                    <canvas id="myChart"></canvas>
+                    <button onclick="openChart()" id ="openChartBtn">Open Chart</button>   
+                </div>
+                <button onclick="moreInfo()" id ="moreInfoBtn">More Information</button>   
+            </div>  
+
+            <div class="row" id="moreInfoDiv">
+                <h4>Some more information about weather :</h4>
+                <div class="col-sm-5">                       
+                
+                    <label class= "WindSpeed">Wind speed : </label>
+                    <br>
+                    <label class= "Humidity">Humidity : </label>
+                    <br>
+                    <label class= "Pressure">Pressure : </label>
+                    <br>
+                    <label class= "SunriseTime">Sunrise/Sunset : </label>
+                    
+                    <button onclick="lessInfo()" id ="lessInfoBtn">Less Information</button>
+                
+                </div>
+                <div class="col-sm-7"style ="text-align : center">          
+                    <label class = "Day">Day of the week : </label>
+                    <br>
+                    <label class = "FeelsLike">Feels like: </label>                
+                </div>
+                
+            </div>
+        </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <label> By Chitrarekha Sikarwar</label>
+</footer>
+</html>
